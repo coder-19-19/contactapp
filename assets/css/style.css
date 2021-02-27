@@ -1,0 +1,239 @@
+*{
+    outline: 0;
+    border: 0;
+    padding: 0;
+}
+body{
+    background-color: #181a1b;
+    font-family: 'Lexend Deca',sans-serif;
+}
+
+
+.main{
+    padding: 0;
+    border-radius: 0 0 6px 6px;
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    -ms-border-radius: 0 0 6px 6px;
+    -o-border-radius: 0 0 6px 6px;
+    background-color: #212a3e;
+    overflow: auto;
+    position: relative;
+    height: 100vh;
+}
+.main .header{
+    background-color: #445c6e;
+    padding: 12px 20px;
+    border-radius: 6px 6px 0px 0px;
+    -webkit-border-radius: 6px 6px 0px 0px;
+    -moz-border-radius: 6px 6px 0px 0px;
+    -ms-border-radius: 6px 6px 0px 0px;
+    -o-border-radius: 6px 6px 0px 0px;
+    display: flex;
+    box-shadow: 0px 2px 3px 0px black;
+}
+.main .header .group{
+    position: relative;
+    height: 40px;
+    flex: 1;
+}
+.main .header .group .search-input{
+    text-align: center;
+    padding: 8px 29px 8px 10px ;
+    width: 100%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    display: inline-block;
+    border: 1px solid rgb(190, 190, 190);
+    text-transform: capitalize;
+}
+.main .header .group .search-input:hover{
+    border: 1px solid black;
+}
+.main .header .group .fa-search{
+    position: absolute;
+    top: 13px;
+    right: 12px;
+    cursor: pointer;
+}
+
+
+.main  .fa-user-plus{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color:#1f865a;
+    text-align: center;
+    cursor: pointer;
+    line-height: 40px;
+    transition:  600ms;
+    -webkit-transition:  600ms;
+    -moz-transition:  600ms;
+    -ms-transition:  600ms;
+    -o-transition:  600ms;
+    position: fixed;
+    bottom: 20px;
+    z-index: 1;
+}
+.main .fa-user-plus:hover{
+    background-color: #01cd74;
+}
+.main .content .contacts{
+    list-style: none;
+    padding: 10px;
+}
+
+.main .content .contacts .contact{
+    background-color: #445c6e;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 600ms;
+    -webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    -ms-transition: all 600ms;
+    -o-transition: all 600ms;
+    box-shadow: 0px 2px 3px 0px black;
+    display: flex;
+    justify-content: space-between;
+}
+.main .content .contacts .contact:hover{
+    background-color: #314858;
+}
+.main .content .contacts .contact:first-child{
+    border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    -ms-border-radius: 6px 6px 0 0;
+    -o-border-radius: 6px 6px 0 0;
+}
+.main .content .contacts .contact:last-child{
+    border-radius: 0 0 6px 6px;
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    -ms-border-radius: 0 0 6px 6px;
+    -o-border-radius: 0 0 6px 6px;
+}
+.main .content .contacts .contact .contact-info{
+    display: flex;
+}
+.main .content .contacts .contact .call-box{
+    display: inline-block;
+    margin-top: 5px;
+}
+.main .content .contacts .contact .call-box i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    background-color: #1f865a;
+    transition: all 600ms;
+    -webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    -ms-transition: all 600ms;
+    -o-transition: all 600ms;
+}
+.main .content .contacts .contact .call-box i:hover{
+    background-color:#01cd74;
+}
+.main .content .contacts .contact .call-box .fa-envelope{
+    background-color: #c29518;
+}
+.main .content .contacts .contact .call-box .fa-envelope:hover{
+    background-color: #e0ae23;
+}
+.main .content .contacts .contact .contact-info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 5px;
+}
+.main .content .contacts .contact .contact-info div{
+    word-break: break-all;
+}
+.main .content .contacts .contact .contact-info div .contact-name{
+    color: #01b5dd;
+    font-size: 15px;
+}
+.main .content .contacts .contact .contact-info div .contact-number{
+    color: white;
+    font-size: 12px;
+}
+
+.add-input{
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 10px;
+    margin-top: 5px;
+    transition: all 600ms;
+    -webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    -ms-transition: all 600ms;
+    -o-transition: all 600ms;
+    width: 100%;
+    text-transform: capitalize;
+}
+.add-input:hover{
+    border: 1px solid #01b5dd;
+}
+
+
+/*Scroll*/
+::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #525965;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #525965;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #525965;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
